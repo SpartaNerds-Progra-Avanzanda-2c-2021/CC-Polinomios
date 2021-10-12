@@ -20,7 +20,7 @@ public class PolinomioTest {
 	
 	@Test
 	public void testEvaluarMSucesivas() {
-		assertEquals(8.0, p1.evaluarMSucesivas(1), 0.1);
+		assertEquals(18.0, p1.evaluarMSucesivas(2), 0.1);
 	}
 
 	@Test
