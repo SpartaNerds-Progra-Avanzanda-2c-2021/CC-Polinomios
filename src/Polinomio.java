@@ -64,8 +64,10 @@ public class Polinomio {
 	}
 
 	double evaluarHorner(double x) {
-		// TODO
-		return 0;
+		double resultado = 0;
+		for (int i = 0; i < grado; i++)
+			resultado = this.coeficientes[i]+ x*resultado;
+		return resultado;
 	}
 
 	private double potencia(double x, double n) {
