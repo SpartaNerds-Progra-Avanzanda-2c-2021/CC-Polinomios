@@ -1,4 +1,3 @@
-
 public class Polinomio {
 	private int grado;
 	private double[] coeficientes;
@@ -12,10 +11,18 @@ public class Polinomio {
 	}
 
 	double evaluarMSucesivas(double x) {
-		// TODO
-		return 0;
+		double resultado = 0;
+		for (int i = 0; i < grado; i++) {
+			resultado += this.coeficientes[i]*potencia(x, this.grado-i);
+		}
+		
+		return resultado;
 	}
 
+	private double potencia(double x, int n) {
+		return Math.pow(x, n);
+	}
+	
 	double evaluarRecursiva(double x) {
 		// TODO
 		return 0;
@@ -37,8 +44,7 @@ public class Polinomio {
 	}
 
 	double evaluarPow(double x) {
-		// TODO
-		return 0;
+		return Math.pow(x, this.grado);
 	}
 
 	double evaluarHorner(double x) {
