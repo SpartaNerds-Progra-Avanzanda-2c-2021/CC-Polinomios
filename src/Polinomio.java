@@ -63,6 +63,7 @@ public class Polinomio {
 		return Math.pow(x, this.grado);
 	}
 
+	// O(n)
 	double evaluarHorner(double x) {
 		double resultado = 0;
 		for (int i = 0; i < grado; i++)
