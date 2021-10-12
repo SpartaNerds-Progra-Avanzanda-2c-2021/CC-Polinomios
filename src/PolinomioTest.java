@@ -18,4 +18,13 @@ public class PolinomioTest {
 		assertEquals(8.0, p1.evaluarMSucesivas(1), 0.1);
 	}
 
+	@Test
+	public void testEvaluarRecursiva() {
+		assertEquals(8.0, p1.evaluarRecursiva(1), 0.1);
+	}
+	
+	@Test
+	public void testEvaluarRecursivaPar() {
+		assertEquals(8.0, p1.evaluarRecursivaPar(1), 0.1);
+	}
 }
